@@ -37,8 +37,8 @@ module Helpers
     run_cmd("set").should match(/^#{convert_slashes(line)}$/)
   end
   # checks if the given gem is installed at version
-  def vagrant_plugin_installed(name, version)
-    run_cmd("vagrant plugin list").should match("#{name} \\(#{version}\\)")
+  def vagrant_plugin_installed(name)
+    run_cmd("vagrant plugin list").should match("#{name}")
   end
   # returns true if the box is already imported into vagrant
   def box_imported?(box)

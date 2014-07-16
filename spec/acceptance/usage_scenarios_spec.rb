@@ -13,9 +13,10 @@ describe "usage scenarios" do
   before(:all) do
     require 'fileutils'
     FileUtils.rm_rf LOGFILE
-    FileUtils.rm_rf APP_COOKBOOK_DIR
-    FileUtils.rm_rf INFRA_REPO_DIR
+    FileUtils.rm_rf PLAYGROUND
+    FileUtils.mkdir PLAYGROUND
   end
+
 
   describe "checking prerequisites" do
     it "has Git installed" do
@@ -41,7 +42,7 @@ describe "usage scenarios" do
       cmd_succeeds("cd #{PLAYGROUND} && git clone https://github.com/tknerr/sample-toplevel-cookbook.git")
     end
 
-    it "installs gem dependencies via `bundle exec`" do
+    it "installs gem dependencies via `bundle install`" do
       cmd_succeeds("cd #{APP_COOKBOOK_DIR} && bundle install")
     end
     it "runs the unit tests via `rake test`" do
