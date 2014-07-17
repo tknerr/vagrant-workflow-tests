@@ -26,4 +26,4 @@ Whenever you think you are in a sane environment, you can excercise the workflow
 
 You should see an output like this and all tests should pass:
 
- TODO
+![output of running rspec](https://cloud.githubusercontent.com/assets/365744/3607278/0579cae2-0d45-11e4-81f0-9236c592562a.png)
