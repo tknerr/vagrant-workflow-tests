@@ -44,5 +44,10 @@ module Helpers
   def box_imported?(box)
     run_cmd("vagrant box list").include?(box)
   end
+  # fetches a web page via http get
+  def http_get(url)
+    require "open-uri"
+    URI.parse(url).read
+  end
 
 end
