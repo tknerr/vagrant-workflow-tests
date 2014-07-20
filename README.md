@@ -4,6 +4,9 @@ Specs for my Vagrant / Chef Solo based workflow.
 
 It is intended for testing whether the environment in which it is used has all the prerequisites installed and that the common scenarios can be excercised. It also serves as the acceptance tests for [Bill's Kitchen](https://github.com/tknerr/bills-kitchen).
 
+
+## Scenarios
+
 The common scenarios are centered around:
 
  * A [sample-toplevel-cookbook](https://github.com/tknerr/sample-toplevel-cookbook) with all kinds cookbook tests: syntax check, style checks, linting, unit and integration tests
