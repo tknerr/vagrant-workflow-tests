@@ -22,8 +22,8 @@ describe "usage scenarios" do
     it "has Git installed" do
       run_cmd("git --version").should match('git version')
     end
-    it "has Vagrant 1.6 installed" do
-      run_cmd("vagrant -v").should match('1.6')
+    it "has Vagrant 1.6 or 1.7 installed" do
+      run_cmd("vagrant -v").should match(/(1.6|1.7)/)
     end
 
     it "has 'vagrant-omnibus' plugin installed" do
