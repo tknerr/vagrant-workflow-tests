@@ -2,7 +2,7 @@
 
 Specs for my Vagrant / Chef Solo based workflow. 
 
-It is intended for testing whether the environment in which it is used has all the prerequisites installed and that the common scenarios can be excercised. It also serves as the acceptance tests for [Bill's Kitchen](https://github.com/tknerr/bills-kitchen).
+It is intended for testing whether the environment in which it is used has all the prerequisites installed and that the common scenarios can be excercised. It also serves as the acceptance tests for [Bill's Kitchen](https://github.com/tknerr/bills-kitchen) (a Chef/Vagrant development environment for Windows) and my [Dev-Box](https://github.com/tknerr/dev-box/) (a Chef/Vagrant development environment inside an Ubuntu VM).
 
 
 ## Scenarios
