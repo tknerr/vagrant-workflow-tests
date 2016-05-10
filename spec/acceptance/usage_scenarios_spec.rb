@@ -65,7 +65,7 @@ describe "usage scenarios" do
       run_cmd("cd #{INFRA_REPO_DIR} && vagrant ssh app_v1 -c 'pwd'").should match("/home/vagrant")
     end
     it "can access the sample.html page served by the VM" do
-      http_get("http://172.16.40.30/sample.html").should match("Chuck Norris")
+      http_get("http://localhost:8080/sample.html").should match("Chuck Norris")
     end
     it "can provision that VM via `vagrant provision`" do
       cmd_succeeds("cd #{INFRA_REPO_DIR} && vagrant provision app_v1")
